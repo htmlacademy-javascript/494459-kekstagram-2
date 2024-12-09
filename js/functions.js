@@ -1,13 +1,13 @@
 const checkStringLength = (str, length) => str.length <= length;
 
 const isPalindrome = (str) => {
-  let tmp = '';
+  let temporaryString = '';
 
   for (let i = str.length - 1; i >= 0; i--) {
-    tmp += str[i];
+    temporaryString += str[i];
   }
 
-  const reverseString = tmp.toLowerCase().replaceAll(' ', '');
+  const reverseString = temporaryString.toLowerCase().replaceAll(' ', '');
   const string = str.toLowerCase().replaceAll(' ', '');
 
   return reverseString === string;
